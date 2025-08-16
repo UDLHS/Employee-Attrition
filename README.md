@@ -12,12 +12,7 @@ The dataset I used was **limited and did not include a target variable (y label)
 
 Since there was no target label, I engineered a **customer recommendation score** (`RecommendPercent`) ranging from 0 to 100 using the following formula:
 
-RecommendScore = 0.3 * SpendNorm
-+ 0.25 * (1 - ReturnRate)
-+ 0.2 * PremiumRatioNorm
-+ 0.15 * NoReturns
-+ 0.1 * (1 - NewCustomer)
-
+RecommendScore = 0.3 * SpendNorm + 0.25 * (1 - ReturnRate) + 0.2 * PremiumRatioNorm + 0.15 * NoReturns + 0.1 * (1 - NewCustomer)
 
 Where:  
 
